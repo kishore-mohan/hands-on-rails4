@@ -27,6 +27,11 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.0)
     atomic (1.1.14)
+    bcdatabase (1.2.3)
+      activesupport (>= 2.0)
+      highline (~> 1.5, < 1.6.9)
+      i18n
+      thor (~> 0.14)
     builder (3.1.4)
     coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
@@ -37,6 +42,7 @@ GEM
     coffee-script-source (1.6.3)
     erubis (2.7.0)
     execjs (2.0.2)
+    highline (1.6.8)
     hike (1.2.3)
     i18n (0.6.5)
     jbuilder (1.5.1)
@@ -53,6 +59,7 @@ GEM
     mime-types (1.25)
     minitest (4.7.5)
     multi_json (1.8.1)
+    pg (0.16.0)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -91,7 +98,6 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
-    sqlite3 (1.3.8)
     therubyracer (0.11.4)
       libv8 (~> 3.11.8.12)
       ref
@@ -113,13 +119,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcdatabase (~> 1.2)
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails
+  pg
   rails (= 4.0.0)
   sass-rails (~> 4.0.0)
   sdoc
-  sqlite3
   therubyracer
   turbolinks
   uglifier (>= 1.3.0)
