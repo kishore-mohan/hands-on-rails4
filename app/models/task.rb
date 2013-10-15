@@ -3,12 +3,12 @@ class Task < ActiveRecord::Base
   has_many :logs, :dependent => :destroy
   belongs_to :project
 
-  default_scope {order(:done,:created_at => :desc)}
+  #default_scope {order(:done,:created_at => :desc)}
 
   validates :name,:project ,:presence => true
 
   def work?
-    !logs.empty? && !logs.first.stop
+    !logs.empty? && !logs.first.stop && !self.done
   end
 
   def logged
