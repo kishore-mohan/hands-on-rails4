@@ -4,8 +4,13 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 
 # Use sqlite3 as the database for Active Record
-gem 'pg'
+gem 'sqlite3'
 
+gem "unicorn"
+
+group :development do
+  gem "capistrano"
+end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
