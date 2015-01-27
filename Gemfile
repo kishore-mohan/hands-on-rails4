@@ -9,7 +9,8 @@ gem 'sqlite3'
 gem "unicorn"
 
 group :development do
-  gem "capistrano"
+gem 'capistrano', '~> 2.15'
+gem 'rvm-capistrano'
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
