@@ -3,7 +3,7 @@ require "rvm/capistrano"
 
 server "172.29.59.157", :web, :app, :db, primary: true
 
-set :rvm_ruby_string,  ENV['GEM_HOME'].gsub(/.*\//,"")
+#set :rvm_ruby_string,  ENV['GEM_HOME'].gsub(/.*\//,"")
 set :rvm_type, :system
 set :application, "projectname"
 set :user, "deploy"
